@@ -6,7 +6,7 @@ import config
 @Client.on_message(filters.command(["start", "start@GroupMusicPlayBot"]) & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
-        text="**ʜᴇʏ{}!**\n\nɪ**ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs ᴏғ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs.**ɪ ʜᴀᴠᴇ ᴀ  **ʟᴏᴛ ᴏғ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴛʜᴀᴛ ᴡɪʟʟ ᴀᴍᴀᴢᴇ ʏᴏᴜ!**\n\n**ᴄʟɪᴄᴋ /cmdlist ғᴏʀ ᴍᴏʀᴇ ʜᴇʟᴘ ᴏɴ ᴍʏ ᴜsᴀɢᴇ ❤**".format(message.from_user.mention),
+        text="**ʜᴇʏ {}!**\n\n ɪ**ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs ᴏғ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs.**ɪ ʜᴀᴠᴇ ᴀ  **ʟᴏᴛ ᴏғ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴛʜᴀᴛ ᴡɪʟʟ ᴀᴍᴀᴢᴇ ʏᴏᴜ!**\n\n**ᴄʟɪᴄᴋ /cmdlist ғᴏʀ ᴍᴏʀᴇ ʜᴇʟᴘ ᴏɴ ᴍʏ ᴜsᴀɢᴇ ❤**".format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [[
             InlineKeyboardButton(" ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ", url="https://t.me/lezy_music_bot?startgroup=true")
@@ -17,7 +17,7 @@ async def start(_, message: Message):
              InlineKeyboardButton("«ᴍᴜsɪᴄ ɢʀᴏᴜᴘ»", url="https://t.me/music_and_chats")
             ]]
         ),
-        disable_web_page_preview=false
+        disable_web_page_preview=False
     )
         
 @Client.on_message(filters.command(["start", "start@GroupMusicPlayBot"]) & ~filters.private & ~filters.channel)
