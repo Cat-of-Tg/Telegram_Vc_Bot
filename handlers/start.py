@@ -6,25 +6,27 @@ import config
 @Client.on_message(filters.command(["start", "start@GroupMusicPlayBot"]) & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
-        text="**Hello 👋🏻 {}!**\n\nI **Can Play Music In Voice Chats of Telegram Groups.**I Have A **lot of cool feature that will amaze You!**\n\n**Click /cmdlist For More Help On My Usage ❤**".format(message.from_user.mention),
+        text="**ʜᴇʏ{}!**\n\nɪ**ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs ᴏғ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs.**ɪ ʜᴀᴠᴇ ᴀ  **ʟᴏᴛ ᴏғ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴛʜᴀᴛ ᴡɪʟʟ ᴀᴍᴀᴢᴇ ʏᴏᴜ!**\n\n**ᴄʟɪᴄᴋ /cmdlist ғᴏʀ ᴍᴏʀᴇ ʜᴇʟᴘ ᴏɴ ᴍʏ ᴜsᴀɢᴇ ❤**".format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton("➕ Add To Your Group ➕", url="https://t.me/{}?startgroup=true")
+            InlineKeyboardButton(" ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ", url="https://t.me/lezy_music_bot?startgroup=true")
             ],[
-            InlineKeyboardButton("💬 Group", url="https://t.me/BotMusics"),
-            InlineKeyboardButton("Commands 🛠", url="https://telegra.ph/Music-Bot-05-07")
+            InlineKeyboardButton("«sᴜᴘᴘᴏʀᴛ»", url="https://t.me/BotMusics"),
+            InlineKeyboardButton("«ᴄᴏᴍᴍᴀɴᴅs»", url="https://telegra.ph/Lezy-Music-Bot-10-14-2")
+            ],[
+             InlineKeyboardButton("«ᴍᴜsɪᴄ ɢʀᴏᴜᴘ»", url="https://t.me/music_and_chats")
             ]]
         ),
-        disable_web_page_preview=True
+        disable_web_page_preview=false
     )
         
 @Client.on_message(filters.command(["start", "start@GroupMusicPlayBot"]) & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
-        text="**Music Bot Is Online ✅**",
+        text="**ʟᴇᴢʏ ᴍᴜsɪᴄ ʙᴏᴛ ɪs ᴏɴʟɪɴᴇ**",
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton(text="🎙️ Support Group 🎙️", url="https://t.me/MusicBotSupports")
+            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="https://t.me/teamladz_bothub")
             ]]
         )
     )
@@ -38,7 +40,7 @@ async def cmdlist(_, message: Message):
 __× First Add Me To Your Group..
 × Promote Me As Admin In Your Group With All Permission..__
 
-**🏷 Common Commands.**
+**🏷 ᴄᴏᴍᴍᴀɴ ᴄᴏᴍᴍᴀɴᴅs**
 
 • `/play` - Song Name : __Plays Via Youtube__
 • `/dplay` - Song Name : __Play Via Deezer__
